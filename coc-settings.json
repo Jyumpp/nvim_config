@@ -1,0 +1,10 @@
+{
+  "suggest.enable": false,
+  "hover.enabled": false,
+  "signature.enable": false,
+  "diagnostic.enable": false,
+  "coc.preferences.previewMaxHeight": 0,
+  "coc.preferences.previewMaxWidth": 0,
+  "suggest.autoTrigger": "none"
+}
+
