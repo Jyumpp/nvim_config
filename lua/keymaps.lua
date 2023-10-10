@@ -37,6 +37,9 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 -- Clear highlights
 keymap("n", "<leader>h", "<cmd>nohlsearch<CR>", opts)
 
+-- Activate Tree
+keymap("n", "<leader>e", "<cmd>NvimTreeToggle<CR>", opts)
+
 -- Close buffers
 keymap("n", "<S-q>", "<cmd>Bdelete!<CR>", opts)
 
