@@ -16,19 +16,6 @@
   // "tsserver.trace.server": "verbose",
   // "xml.trace.server": "verbose",
   // "yaml.trace.server": "verbose",
-  "clangd.arguments": [
-    "--all-scopes-completion",
-    "--background-index",
-    "--clang-tidy",
-    "--completion-parse=auto",
-    "--completion-style=detailed",
-    "--function-arg-placeholders=true",
-    "--query-driver=/usr/bin/clang++",
-    "--header-insertion-decorators=false",
-    "--header-insertion=iwyu",
-    "-j=8"
-  ],
-  "clangd.path": "~/bin/clangd",
   "coc.preferences.enableLinkedEditing": true,
   "coc.preferences.enableMessageDialog": true,
   "coc.preferences.extensionUpdateCheck": "daily",
@@ -48,34 +35,10 @@
   "diagnostic.format": "%message [%source]",
   "diagnostic.separateRelatedInformationAsDiagnostics": true,
   "diagnostic.virtualText": false,
-  "eslint.autoFixOnSave": true,
-  "eslint.format.enable": true,
-  "eslint.packageManager": "yarn",
-  "go.goplsOptions": {
-    "codelenses": {
-      "test": true
-    },
-    "experimentalPostfixCompletions": true,
-    "hints": {
-      "assignVariableTypes": true,
-      "compositeLiteralFields": true,
-      "compositeLiteralTypes": true,
-      "constantValues": true,
-      "functionTypeParameters": true,
-      "parameterNames": true,
-      "rangeVariableTypes": true
-    },
-    "linksInHover": false,
-    "semanticTokens": true,
-    "staticcheck": true,
-    "usePlaceholders": true
-  },
-  "go.goplsPath": "gopls",
   "hover.floatConfig": {
     "border": true,
     "rounded": true
   },
-  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
   "languageserver": {},
   "links.highlight": true,
   "links.tooltip": true,
@@ -89,17 +52,6 @@
     "<C-n>": "do:previewdown",
     "<C-p>": "do:previewup"
   },
-  "list.source.grep.defaultArgs": ["--ignore-case"],
-  "list.source.grep.useLiteral": false,
-  "Lua.completion.callSnippet": "Both",
-  "Lua.completion.postfix": ".",
-  "Lua.diagnostics.globals": ["vim", "jit"],
-  "Lua.runtime.version": "LuaJIT",
-  "Lua.workspace.checkThirdParty": false,
-  "markdownlint.config": {
-    "default": true,
-    "line-length": false
-  },
   "notification.statusLineProgress": true,
   "pullDiagnostic.onChange": false,
   "pullDiagnostic.onSave": true,
@@ -112,18 +64,12 @@
   "python.formatting.provider": "black",
   "python.linting.enabled": true,
   "python.linting.ruffEnabled": true,
-  "rust-analyzer.server.path": "ra-multiplex",
   "semanticTokens.enable": true,
   "signature.floatConfig": {
     "border": true,
     "rounded": true
   },
   "signature.target": "echo",
-  "snippets.extends": {
-    "javascriptreact": ["javascript"],
-    "typescript": ["javascript"]
-  },
-  "snippets.ultisnips.enable": false,
   "suggest.acceptSuggestionOnCommitCharacter": true,
   "suggest.defaultSortMethod": "none",
   "suggest.detailField": "abbr",
@@ -132,21 +78,6 @@
     "rounded": true
   },
   "suggest.selection": "recentlyUsedByPrefix",
-  "sumneko-lua.enableNvimLuaDev": true,
-  "tsserver.experimental.enableProjectDiagnostics": true,
-  "tsserver.implicitProjectConfig.checkJs": true,
-  "tsserver.useLocalTsdk": true,
-  "typescript.autoClosingTags": true,
-  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
-  "typescript.format.semicolons": "ignore",
-  "typescript.inlayHints.enumMemberValues.enabled": true,
-  "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
-  // "typescript.inlayHints.parameterNames.enabled": "literals",
-  "typescript.inlayHints.parameterTypes.enabled": true,
-  "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
-  "typescript.inlayHints.variableTypes.enabled": true,
-  "typescript.preferences.useAliasesForRenames": false,
-  "typescript.referencesCodeLens.showOnAllFunctions": true,
   "workspace.ignoredFolders": [
     "$HOME",
     "$HOME/.cargo/**",
