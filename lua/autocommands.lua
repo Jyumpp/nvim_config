@@ -24,6 +24,24 @@ vim.api.nvim_create_autocmd({ "VimResized" }, {
   end,
 })
 
+local iterm_installed = vim.fn.executable('it2copy') == 1 and vim.fn.executable('it2paste') == 1
+
+  if iterm_installed then
+    vim.g.clipboard = {
+      name = 'iterm-clipboard',
+      copy = {
+        ['+'] = 'it2copy',
+        ['*'] = 'it2copy',
+      },
+      paste = {
+        ['+'] = 'it2paste',
+        ['*'] = 'it2paste',
+      },
+      cache_enabled = 0,
+    }
+  end
+
+
 vim.api.nvim_create_autocmd({ "TextYankPost" }, {
   callback = function()
     vim.highlight.on_yank { higroup = "Visual", timeout = 200 }
