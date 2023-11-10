@@ -1,15 +1,13 @@
 local M = {
     "github/copilot.vim",
-    lazy = false,
+    lazy = true,
     event = "VeryLazy",
-    priority = 2000
+    priority = -10,
 }
 
 function M.config()
-    vim.g.copilot_no_tab_map = true
-    vim.g.copilot_no_cr_map = true
-    vim.api.nvim_set_keymap("i", "<S-Space>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
- --   vim.g.copilot_assume_mapped = true
+  vim.keymap.set("i", "<C-a>", "copilot#Accept('<CR>')", {silent = true, expr=true, replace_keycodes = false})
+  
 end
 
 return M
